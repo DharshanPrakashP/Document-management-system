@@ -5,7 +5,10 @@ const documentVersionSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    documentId: Number,
+    documentId: {
+        type: Number,
+        required: true
+    },
     version_number: Number,
     file_url: String,
     notes: String,
