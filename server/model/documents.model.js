@@ -1,3 +1,4 @@
+
 const mongoose = require('mongoose');
 
 const documentSchema = new mongoose.Schema({
@@ -27,3 +28,4 @@ const documentSchema = new mongoose.Schema({
   const DocumentModel = mongoose.model('Document', documentSchema);
    
   module.exports = DocumentModel;
+
