@@ -3,11 +3,13 @@ const mongoose = require('mongoose');
 const documentVersionSchema = new mongoose.Schema({
     id: {
         type: Number,
-        required: true
+        required: true,
+        unique: true
     },
     documentId: {
         type: Number,
-        required: true
+        required: true,
+        unique: true
     },
     version_number: Number,
     file_url: String,
